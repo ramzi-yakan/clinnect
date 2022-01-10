@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#90cca5"
+
+    tools:context=".ManageServices">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:layout_editor_absoluteX="40dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Services"
+                android:textSize="30sp"
+                app:fontFamily="@font/marko_one" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/serviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name of service"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service performed by"
+                android:textSize="17sp"
+                app:fontFamily="@font/marko_one" />
+
+            <RadioGroup
+                android:id="@+id/daysOfWeek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mondayRadioButton"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Doctor"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/tuesdayRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nurse"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/wednesdayRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Staff"
+                    android:textSize="17sp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/costForService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cost of service"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/updateManageInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/cancelPersonalInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Refresh" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refresh criteria"
+                android:textSize="17sp"
+                app:fontFamily="@font/marko_one" />
+
+            <RadioGroup
+                android:id="@+id/serviceRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/doctorRefreshButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Doctor"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/nurseRefreshButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nurse"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/staffRefreshButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Staff"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/allRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <ListView
+                android:id="@+id/listOfAvailabilities"
+                android:layout_width="match_parent"
+                android:layout_height="304dp"
+                android:overScrollMode="always"
+                android:nestedScrollingEnabled="true"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

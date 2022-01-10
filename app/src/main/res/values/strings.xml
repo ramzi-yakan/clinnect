@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Clinnect</string>
+    <string name="Clinnect">Clinnect</string>
+    <string name="username">Username</string>
+    <string name="PasswordMainLogIn">Password</string>
+    <string name="WelcomeTo">Welcome To</string>
+    <string name="LogIn">LOGIN</string>
+    <string name="DontHaveAnAccount">Don\'t have an account yet?</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="ConfirmPersonalInfo">Confirm Personal Information</string>
+    <string name="Role">Please identify your role for using Clinnect</string>
+    <string name="SubmitButton">SUBMIT</string>
+    <string name="PleaseProvideInfo">Please provide required information</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="dateOfBirth">Date Of Birth (month/day/year) ex. 12/24/1968</string>
+    <string name="DOB2">Date Of Birth (MM/DD/YYYY)</string>
+    <string name="mailingAddress">Mailing Address</string>
+    <string name="postalCode">Postal Code</string>
+    <string name="Username">Username</string>
+    <string name="EmployeeNumber">Employee Number</string>
+    <string name="BusinessAddress">Business Address</string>
+    <string name="UserNameAndPassword">Username and Password</string>
+    <string name="WelcomeLogin">Welcome (name)!</string>
+    <string name="LoginRole">You are logged-in as a (role).</string>
+    <string name="PasswordCreatAccount">Password</string>
+    <string name="EmailText">Email Address</string>
+    <string name="ContinueString">Continue</string>
+    <string name="loggedInAsAdmin">Logged in as Admin</string>
+    <string name="AdminFunctionality">As an Admin you have access to the following functionality.</string>
+    <string name="PhoneNumberStr">Phone Number (required)</string>
+    <string name="AddressStr">Address (required)</string>
+    <string name="CompanyNameStr">Company Name (required)</string>
+    <string name="GeneralDescStr">General Description</string>
+    <string name="LicensedStr">Licensed</string>
+    <string name="EditStr">Edit</string>
+
+    <string-array name="daysOfWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#90cca5"
+
+    tools:context=".ManageAvailabilities">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:layout_editor_absoluteX="40dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Availabilites"
+                android:textSize="30sp"
+                app:fontFamily="@font/marko_one" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Day of Week"
+                android:textSize="17sp"
+                app:fontFamily="@font/marko_one"
+                android:textAlignment="center"/>
+
+            <Spinner
+                android:id="@+id/spinnerForWeekDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:entries="@array/daysOfWeek"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stajwdidjsxkvwf3qd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Time"
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        app:fontFamily="@font/marko_one" />
+
+                    <TextView
+                        android:id="@+id/startTimeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(Not set)" />
+                </LinearLayout>
+
+                <Button
+
+                    android:id="@+id/updateStartTimeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:onClick="onClickStartTime"
+                    android:text="@string/EditStr" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/startTimeTextyyy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End Time"
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        app:fontFamily="@font/marko_one" />
+
+                    <TextView
+                        android:id="@+id/endTimeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(Not set)" />
+                </LinearLayout>
+
+                <Button
+
+                    android:id="@+id/updateEndTimeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:onClick="onClickEndTime"
+                    android:text="@string/EditStr" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/updateManageInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="createAvailability"
+                    android:text="Add" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Availabilities"
+                android:textSize="17sp"
+                app:fontFamily="@font/marko_one"
+                android:textAlignment="center"/>
+
+            <ListView
+                android:id="@+id/listOfAvailabilities"
+                android:layout_width="match_parent"
+                android:layout_height="304dp"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="always" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
